@@ -1,40 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Splash App (ALX Project 0x03)
 
-## Getting Started
+A modern **Next.js + TypeScript** application showcasing advanced frontend development practices.  
+This project demonstrates **shared layouts, reusable components, responsive design, error handling, and TypeScript type safety** while integrating **TailwindCSS** and **React Icons**.  
 
-First, run the development server:
+It serves as a **production-ready foundation** for scalable applications, including AI-driven features such as text generation, text-to-image tools, and interactive dashboards.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Shared Layouts (DRY principle)** – Centralized `Header`, `Footer`, and `Layout` components for consistent branding.  
+- **Reusable UI Components** – Example: `Button` with customizable props and theme support.  
+- **Responsive Design** – Built with TailwindCSS utilities, optimized for all screen sizes.  
+- **TypeScript Type Safety** – Centralized interfaces for better maintainability.  
+- **Google Fonts Integration** – Using Montserrat for modern typography.  
+- **Imperative Routing** – Navigation powered by `useRouter`.  
+- **Custom Error Handling** – Friendly and fun 404 page.  
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **[Next.js](https://nextjs.org/)** – React framework with SSR and static generation.  
+- **[TypeScript](https://www.typescriptlang.org/)** – Strongly typed JavaScript.  
+- **[TailwindCSS](https://tailwindcss.com/)** – Utility-first CSS framework.  
+- **[React Icons](https://react-icons.github.io/react-icons/)** – Scalable vector icons.  
+- **[Google Fonts](https://fonts.google.com/)** – Montserrat font family.  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```markdown
+alx-project-0x03/
+├── components/
+│   ├── common/
+│   │   └── Button.tsx
+│   └── layouts/
+│       ├── Header.tsx
+│       ├── Footer.tsx
+│       └── Layout.tsx
+│
+├── interfaces/
+│   └── index.ts
+│
+├── pages/
+│   ├── index.tsx
+│   └── 404.tsx
+│
+├── styles/
+│   └── global.css
+│
+├── public/            # Static assets (optional)
+├── package.json
+├── tsconfig.json
+└── README.md
